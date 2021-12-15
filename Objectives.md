@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <title>Boards Objective</title>
+<title>Boards Objective</title>
 </head>
 <header>
     <h1>Artifical Intelligence Objectives</h1>
