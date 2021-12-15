@@ -1,0 +1,55 @@
+<!-- Manuel Espinoza Romo-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blast Off Countdown! </title>
+    <script>
+        //Script tags starts JavaScript
+        function StartTheCountdown(){
+            var countdown = 10;
+            // used to display time
+            var timeout = 10000
+            //used to keep time of actual time 1000 = 1 sec
+            //Creates Countdown 
+            //for loop to iterate through the full countdown
+            // needs to be 11 so count can reach 0 and change to blast off
+            for (var i = 11; i >= 0; i--){
+            setTimeout(() => {
+                //Changes the Display by getting the ID
+                //conditional to determine whether to keep the number or output text
+                if (countdown >= 0){
+
+                document.getElementById("CountdownDisplay").innerHTML = countdown;
+                //Changes the number for the countdown
+               countdown = countdown - 1;;}
+               else{
+                document.getElementById("CountdownDisplay").innerHTML = "Blast Off!";
+
+               }
+
+            },timeout)
+            //Time delay
+            timeout = timeout - 1000;
+            continue;
+            }
+//document.getElementById("CountdownDisplay").innerHTML = "Blast Off!";
+        }
+
+    </script>
+</head>
+<body>
+    <h1> Blast Off Countdown! </h1>
+    <p> This application will count how long until blast off</p>
+    <h2>Countdown</h2><button type="buton" onclick="StartTheCountdown()">Start Countdown</button>
+    <!-- This creates a button to start countdown-->
+    <p id = "CountdownDisplay"> 10</p>
+    <footer style="border-top: double;">
+        <p>University of Advancing Technology</p>
+        <p>2625 W Baseline Rd, Tempe, AZ 85283</p>
+    </footer>
+    <nav>
+        <a href="https://mespinoza39.github.io">Landing Page</a>
+    </nav>
+</body>
+</html>
